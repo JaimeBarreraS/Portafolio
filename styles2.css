@@ -1,0 +1,554 @@
+@font-face {
+    font-family: D;
+    src: url(font/SpaceX.ttf);
+}
+@font-face {
+    font-family: T;
+    src: url(font/Equinox\ Bold.otf);
+}
+@font-face {
+    font-family: S;
+    src: url(font/Equinox\ Regular.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    width: 400vw;
+    height: 100vh;
+    overflow: hidden;
+}
+/* ==========================================*/
+/* ================ PAGINAS ==============*/
+/* ==========================================*/
+
+.pagina1{
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    background-color: rgba(0,0,0,255);
+}
+.pagina2{
+    position: absolute;
+    left: 100vw;
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    background-color:rgba(0,0,0,255);
+}
+.pagina3{
+    position: absolute;
+    left: 200vw;
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    background-color: #1cd049;
+}
+.pagina4{
+    position: absolute;
+    left: 300vw;
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    background-color: #cc33b2;
+}
+.gif{
+    position: absolute;
+    width: 5vw;
+    top: 7%;
+    left: 8%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    width: 90%;
+    top: 0;
+    z-index: 10;
+    font-family: T;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color:#ffffff;
+    left: 10%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+
+/* ==========================================*/
+/* ================ PAGINA 1 ==============*/
+/* ==========================================*/
+
+
+.text-section {
+    width: 50%;
+}
+
+.text-section h3 {
+    top: 14.5%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    left: 5%;
+    font-family: D;
+}
+
+.ev{
+    left: 5%;
+    top: 14.5%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: S;
+}
+
+.text-section h1 {
+    left: 5%;
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    font-size: 9rem;
+    font-weight: bold;
+    color:#ff5e00;
+    writing-mode: vertical-lr;
+    transform: rotate(0deg);
+}
+
+.Jaime{
+    position: absolute;
+    left: 60%;
+    top: 18%;
+    font-size: 2rem;
+    font-weight: bold;
+    color:#ff5e00;
+    opacity: 0.7;
+}
+
+.text-section .highlight {
+    color: white;
+}
+
+.text-section h2  {
+    left: 5%;
+    position: absolute;
+    top: 11%;
+    font-size: 6rem;
+    font-weight: bold;
+    background: url('imagen/image.png') no-repeat center center/cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: D;
+}
+
+.text-section p {
+    left: 5%;
+    position: absolute;
+    top: 22%;
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 20px 0;
+    font-family: S;
+}
+
+.learn-more {
+    left: 5%;
+    position: absolute;
+    top: 28%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 1vw;
+    transition: background 0.3s, color 0.3s;
+    font-family: T;
+}
+
+.learn-more:hover {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.863);
+}
+
+.image-section {
+    top: 2%;
+    width: 40%;
+    position: absolute;
+    left: 60%;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.text-section h1 {animation: slideInFromLeft 1s ease-out forwards; animation-delay: 0.4s;}
+.text-section h2 { animation: slideInFromRight 1s ease-out forwards; animation-delay: 0.4s; }
+.text-section h3 { animation: slideInFromBottom 1s ease-out forwards; animation-delay: 0.6s; }
+.text-section p { animation: fadeIn 1s ease-out forwards; animation-delay: 0.8s; }
+.ev, .learn-more { animation: bounceIn 1s ease-out forwards; animation-delay: 1s; }
+
+
+.image-section img {
+    opacity: 0;
+    animation: slideInFromRight 1.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+
+/* ==========================================*/
+/* ================ PAGINA 2 ==============*/
+/* ==========================================*/
+.jaime2{
+    left: 10vw;
+    top: -10%;
+    position: absolute;
+    width: 55vw;
+}
+.jaime3{
+    left: -10vw;
+    top: -30%;
+    position: absolute;
+    width: 90vw;
+    opacity: 0.2;
+}
+
+.a3{
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color:#ffffff;
+    font-family: S;
+    top: 4%;
+    left: 43%;
+}
+
+.a1{
+    font-size: 5rem;
+    font-weight: bold;
+    color:#ff5e00;
+    opacity: 0.1;
+    font-family: D;
+    top: 2%;
+    left: 40%;
+    position: absolute;
+}
+
+.p{
+    position: absolute;
+    font-size: 1rem;
+    color:#ffffff;
+    top: 12%;
+    left: 43%; 
+    font-family:Verdana;
+}
+
+.a2{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color:#ff5e0098;
+    font-family: S;
+    top: 19%;
+    left: 43%;
+}
+.b2{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color:#ffffff;
+    font-family: T;
+    top: 19%;
+    left: 55%;
+}
+.p2{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color:#ffffff;
+    font-family:S;
+    top: 26%;
+    left: 43%;
+}
+/* Main Display Section */
+.main-display {
+    position: absolute;
+    width: 53vw;
+    height: 25vh;
+    left: 24vw;
+    top: 70vh;
+    font-family: T;
+}
+
+svg {
+    width: 20vw;
+    height: 20vw;
+    background-color: #000000;
+}
+
+/* Estilos de los círculos */
+.c1, .c2, .c3, .c4 {
+    position: absolute;
+    top: 0.6vw;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 1vw;
+}
+
+.c1 { left: 5vw; }
+.c2 { left: 16vw; }
+.c3 { left: 27vw; }
+.c4 { left: 38vw; }
+
+/* Líneas de animación */
+.color1, .color3, .color5, .color7 {
+    fill: none;
+    stroke-width: 0.4vw;
+    stroke-dashoffset:100; 
+    transform: rotate(90deg);
+    transform-origin: 50%;
+    animation: cargar 2s forwards ease-in-out;
+}
+.color1{stroke-dasharray: 90 100;}
+.color3{stroke-dasharray: 89 100;}
+.color5{stroke-dasharray: 85 100;}
+.color7{stroke-dasharray: 95 100;}
+
+
+.color1 { stroke: #D35400; }
+.color3 { stroke: #E67E22; }
+.color5 { stroke: #F1C40F; }
+.color7 { stroke: #E0CDA9; }
+
+
+#color2, #color4, #color6, #color8 {
+    fill: none;
+    stroke-width: 0.1vw;
+    stroke-dasharray: 100;
+    transform-origin: 50%;
+}
+
+/* Rotaciones */
+#color2 { transform: rotate(179deg); }
+#color4 { transform: rotate(150deg); stroke-dasharray: 73 100; }
+#color6 { transform: rotate(179deg); stroke-dasharray: 65 100; }
+#color8 { transform: rotate(196deg); stroke-dasharray: 60 100; }
+
+@keyframes cargar {
+    0% {
+        stroke-dashoffset: 100;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.w1 {
+    position: absolute;
+    left: 30%;
+    top: 43.5%;
+    font-size: 0.8vw;
+    color: white;
+    font-family: S;
+}
+
+.w2 {
+    position: absolute;
+    left: 43.7%;
+    top: 43.5%;
+    font-size: 0.8vw;
+    color: white;
+    font-family: S;
+}
+
+.w3 {
+    position: absolute;
+    left: 53.5%;
+    top: 43.5%;
+    font-size: 0.8vw;
+    color: white;
+    font-family: S;
+}
+
+.w4 {
+    position: absolute;
+    left: 64%;
+    top: 43.5%;
+    font-size: 0.8vw;
+    color: white;
+    font-family: S;
+}
+
+.data-display1 p {
+    position: absolute;
+    left: 7.5vw;
+    top: 1vw;
+    font-size: 3vw;
+    font-weight: lighter;
+    color:white;
+}
+.data-display2 p {
+    position: absolute;
+    left: 18.6vw;
+    top: 1vw;
+    font-size: 3vw;
+    font-weight: lighter;
+    color: white;
+}
+.data-display3 p {
+    position: absolute;
+    left: 29.8vw;
+    top: 1vw;
+    font-size: 3vw;
+    font-weight: lighter;
+    color: white;
+}
+.data-display4 p {
+    position: absolute;
+    left: 40.5vw;
+    top: 1vw;
+    font-size: 3vw;
+    font-weight: lighter;
+    color: white;
+}
+.linea{
+    top: 10%;
+    left: 70%;
+    position: absolute;
+    width: 50vw;
+    opacity: 0.4;
+    transform: rotate(90deg); 
+    animation: slideInFromRightLinea 1s ease-in-out forwards;
+}
+
+/* Aplicar las animaciones */
+
+@keyframes slideInFromRightLinea {
+    from {
+        opacity: 0;
+        transform: translateX(100px) rotate(90deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) rotate(90deg);
+    }
+}
+
+
+@keyframes slideInFromBottoma {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 0.1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.b2,.p2 { animation: slideInFromRight 1s ease-out forwards; animation-delay: 0.4s; }
+.p { animation: fadeIn 1s ease-out forwards; animation-delay: 0.8s; }
+.a1{animation: slideInFromBottoma 1s ease-out forwards; animation-delay: 0.6s;}
+.a3 { animation: bounceIn 1s ease-out forwards; animation-delay: 1s; }
+.jaime2, .jaime3,.a2 { animation:  slideInFromLeft 1s ease-out forwards; animation-delay: 0.2s; }
+.w1,.w2,.w3,.w4{ animation: slideInFromBottom 1s ease-out forwards; animation-delay: 0.6s; }
+.linea{animation: slideInFromRightLinea 1s ease-in-out forwards;}
