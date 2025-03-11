@@ -10,7 +10,10 @@
     font-family: S;
     src: url(font/Equinox\ Regular.otf);
 }
-
+* {
+    margin: 0;
+    padding: 0;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -33,7 +36,7 @@ body{
 .pagina1{
     position: absolute;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     overflow: hidden;
     background-color: rgba(0,0,0,255);
 }
@@ -41,7 +44,7 @@ body{
     position: absolute;
     left: 100vw;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     overflow: hidden;
     background-color:rgba(0,0,0,255);
 }
@@ -49,23 +52,22 @@ body{
     position: absolute;
     left: 200vw;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     overflow: hidden;
-    background-color: #1cd049;
+    background-color:rgba(0,0,0,255);
 }
 .pagina4{
     position: absolute;
     left: 300vw;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     overflow: hidden;
-    background-color: #cc33b2;
+    background-color:rgba(0,0,0,255);
 }
 .gif{
     position: absolute;
     width: 5vw;
-    top: 7%;
-    left: 8%;
+    left: 10vw;
 }
 header {
     display: flex;
@@ -73,18 +75,21 @@ header {
     align-items: center;
     padding: 20px 50px;
     position: absolute;
-    width: 90%;
-    top: 0;
+    width: 92vw;
+    top: 3vh;
     z-index: 10;
     font-family: T;
+    font-size: 1.3vw;
 }
 
 .logo {
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     font-weight: bold;
     line-height: 1.3;
     color:#ffffff;
-    left: 10%;
+    left: 2vw;
+    position: relative;
+    font-family: T;
 }
 
 nav ul {
@@ -114,22 +119,22 @@ nav ul li a:hover {
 
 
 .text-section {
-    width: 50%;
+    width: 50vw;
 }
 
 .text-section h3 {
-    top: 14.5%;
+    top: 34vh;
     position: absolute;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     font-weight: lighter;
-    left: 5%;
+    left: 5vw;
     font-family: D;
 }
 
 .ev{
-    left: 5%;
-    top: 14.5%;
+    left: 5vw;
+    top: 31vh;
     position: absolute;
     color: #ffffff;
     font-size: 1.2rem;
@@ -138,11 +143,11 @@ nav ul li a:hover {
 }
 
 .text-section h1 {
-    left: 5%;
+    left: 5vw;
     position: absolute;
-    left: 45%;
-    top: 10%;
-    font-size: 9rem;
+    left: 50vw;
+    top: 20vh;
+    font-size: 9vw;
     font-weight: bold;
     color:#ff5e00;
     writing-mode: vertical-lr;
@@ -151,9 +156,9 @@ nav ul li a:hover {
 
 .Jaime{
     position: absolute;
-    left: 60%;
-    top: 18%;
-    font-size: 2rem;
+    left: 6.5vw;
+    top: 14vh;
+    font-size: 2vw;
     font-weight: bold;
     color:#ff5e00;
     opacity: 0.7;
@@ -164,10 +169,10 @@ nav ul li a:hover {
 }
 
 .text-section h2  {
-    left: 5%;
+    left: 5vw;
     position: absolute;
-    top: 11%;
-    font-size: 6rem;
+    top: 35vh;
+    font-size: 6vw;
     font-weight: bold;
     background: url('imagen/image.png') no-repeat center center/cover;
     -webkit-background-clip: text;
@@ -176,19 +181,19 @@ nav ul li a:hover {
 }
 
 .text-section p {
-    left: 5%;
+    left: 5vw;
     position: absolute;
-    top: 22%;
+    top: 47vh;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1vw;
     margin: 20px 0;
     font-family: S;
 }
 
 .learn-more {
-    left: 5%;
+    left: 5vw;
     position: absolute;
-    top: 28%;
+    top: 60vh;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -205,14 +210,14 @@ nav ul li a:hover {
 }
 
 .image-section {
-    top: 2%;
-    width: 40%;
+    top: 5vw;
+    width: 40vw;
     position: absolute;
-    left: 60%;
+    left: 58vw;
 }
 
 .image-section img {
-    width: 100%;
+    width: 38.5vw;
     border-radius: 10px;
 }
 
@@ -296,89 +301,89 @@ nav ul li a:hover {
 /* ==========================================*/
 .jaime2{
     left: 10vw;
-    top: -10%;
+    top: -10vw;
     position: absolute;
-    width: 55vw;
+    width: 60vw;
 }
 .jaime3{
     left: -10vw;
-    top: -30%;
+    top: -30vw;
     position: absolute;
-    width: 90vw;
+    width: 95vw;
     opacity: 0.2;
 }
 
 .a3{
     position: absolute;
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: bold;
     color:#ffffff;
     font-family: S;
-    top: 4%;
-    left: 43%;
+    top: 15vh;
+    left: 43vw;
 }
 
 .a1{
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: bold;
     color:#ff5e00;
-    opacity: 0.1;
+    opacity: 0.2;
     font-family: D;
-    top: 2%;
-    left: 40%;
+    top: 15vh;
+    left: 42vw;
     position: absolute;
 }
 
 .p{
     position: absolute;
-    font-size: 1rem;
+    font-size: 1vw;
     color:#ffffff;
-    top: 12%;
-    left: 43%; 
+    top: 29vh;
+    left: 43vw; 
     font-family:Verdana;
 }
 
 .a2{
     position: absolute;
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: bold;
     color:#ff5e0098;
     font-family: S;
-    top: 19%;
-    left: 43%;
+    top: 45vh;
+    left: 43vw;
 }
 .b2{
     position: absolute;
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: bold;
     color:#ffffff;
     font-family: T;
-    top: 19%;
-    left: 55%;
+    top: 45vh;
+    left: 55vw;
 }
 .p2{
     position: absolute;
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: bold;
     color:#ffffff;
     font-family:S;
-    top: 26%;
-    left: 43%;
+    top: 60vh;
+    left: 43vw;
 }
 /* Main Display Section */
 .main-display {
     position: absolute;
     width: 53vw;
     height: 25vh;
-    left: 24vw;
-    top: 70vh;
+    left: 37.5vw;
+    top: 69vh;
     font-family: T;
 }
 
 svg {
     width: 20vw;
     height: 20vw;
-    background-color: #000000;
+    background-color: #00000000;
 }
 
 /* Estilos de los círculos */
@@ -387,7 +392,7 @@ svg {
     top: 0.6vw;
     width: 10vw;
     height: 10vw;
-    border-radius: 1vw;
+
 }
 
 .c1 { left: 5vw; }
@@ -441,8 +446,8 @@ svg {
 
 .w1 {
     position: absolute;
-    left: 30%;
-    top: 43.5%;
+    left: 43.5vw;
+    top: 91.3vh;
     font-size: 0.8vw;
     color: white;
     font-family: S;
@@ -450,8 +455,8 @@ svg {
 
 .w2 {
     position: absolute;
-    left: 43.7%;
-    top: 43.5%;
+    left: 57.7vw;
+    top: 91.3vh;
     font-size: 0.8vw;
     color: white;
     font-family: S;
@@ -459,8 +464,8 @@ svg {
 
 .w3 {
     position: absolute;
-    left: 53.5%;
-    top: 43.5%;
+    left: 67.4vw;
+    top: 91.3vh;
     font-size: 0.8vw;
     color: white;
     font-family: S;
@@ -468,8 +473,8 @@ svg {
 
 .w4 {
     position: absolute;
-    left: 64%;
-    top: 43.5%;
+    left: 77.7vw;
+    top: 91.3vh;
     font-size: 0.8vw;
     color: white;
     font-family: S;
@@ -478,7 +483,7 @@ svg {
 .data-display1 p {
     position: absolute;
     left: 7.5vw;
-    top: 1vw;
+    top: 3.6vw;
     font-size: 3vw;
     font-weight: lighter;
     color:white;
@@ -486,7 +491,7 @@ svg {
 .data-display2 p {
     position: absolute;
     left: 18.6vw;
-    top: 1vw;
+    top: 3.6vw;
     font-size: 3vw;
     font-weight: lighter;
     color: white;
@@ -494,7 +499,7 @@ svg {
 .data-display3 p {
     position: absolute;
     left: 29.8vw;
-    top: 1vw;
+    top: 3.6vw;
     font-size: 3vw;
     font-weight: lighter;
     color: white;
@@ -502,16 +507,16 @@ svg {
 .data-display4 p {
     position: absolute;
     left: 40.5vw;
-    top: 1vw;
+    top: 3.6vw;
     font-size: 3vw;
     font-weight: lighter;
     color: white;
 }
 .linea{
-    top: 10%;
-    left: 70%;
+    top: 12vw;
+    left: 73vw;
     position: absolute;
-    width: 50vw;
+    width: 55vw;
     opacity: 0.4;
     transform: rotate(90deg); 
     animation: slideInFromRightLinea 1s ease-in-out forwards;
@@ -525,7 +530,7 @@ svg {
         transform: translateX(100px) rotate(90deg);
     }
     to {
-        opacity: 1;
+        opacity: 0.3;
         transform: translateX(0) rotate(90deg);
     }
 }
@@ -552,3 +557,301 @@ svg {
 .jaime2, .jaime3,.a2 { animation:  slideInFromLeft 1s ease-out forwards; animation-delay: 0.2s; }
 .w1,.w2,.w3,.w4{ animation: slideInFromBottom 1s ease-out forwards; animation-delay: 0.6s; }
 .linea{animation: slideInFromRightLinea 1s ease-in-out forwards;}
+
+/* ==========================================*/
+/* ================ PAGINA 3 ==============*/
+/* ==========================================*/
+
+.velocity-range {
+    position: absolute;
+    width: 20vw;
+    height: 70vh;
+    left: 81.5vw;
+    top: 33vh;
+    font-family: S;
+    color: white;
+}
+.velocity-range  h3 {
+    font-size: 0.9vw;
+}
+.velocity-range  p {
+    font-size: 0.7vw;
+    font-family: D;
+}
+.velocity-range #data-velocity h3 {
+    margin-top: -2vw;
+}
+
+.velocity-range #data-velocity p {
+    margin-top: -1vw;
+    margin-left: 8.7vw;
+    color: #459cff;
+}
+
+.velocity-range #data-velocity2 h3 {
+    margin-top: -2vw;
+}
+
+.velocity-range #data-velocity2 p {
+    margin-top: -1vw;
+    margin-left: 8.7vw;
+    color: #ff6a07;
+}
+
+.velocity-range #data-velocity3 h3 {
+    margin-top: -2vw;
+}
+
+.velocity-range #data-velocity3 p {
+    margin-top: -1vw;
+    margin-left: 8.7vw;
+    color: #d8d217;
+}
+
+.bar {
+    background-color: #30344c;
+    height: 0.4vw;
+    width: 12vw;
+    margin-top: 4vw;
+    border-radius: 8vw;
+    overflow: hidden;
+}
+
+.porcent1 {
+    width: 0;
+    height: 100%;
+    background-color: #459cff;
+    border: #298bfe;
+    animation: fillBar 2s ease-in-out forwards;
+    border-radius: 2vw;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 68.5%;
+    }
+}
+
+.porcent2 {
+    width: 0;
+    height: 100%;
+    background-color: #ff6a07;
+    border: #298bfe;
+    animation: fillBar2 2s ease-in-out forwards;
+    border-radius: 2vw;
+}
+
+@keyframes fillBar2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 21.4%;
+    }
+}
+
+.porcent3 {
+    width: 0;
+    height: 100%;
+    background-color: #d8d217;
+    border: #298bfe;
+    animation: fillBar3 2s ease-in-out forwards;
+    border-radius: 2vw;
+}
+
+@keyframes fillBar3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 10.1%;
+    }
+}
+
+.videoFondo{
+    position: absolute;
+    top: 12vw;
+    width: 30vw;
+    left: 43vw;
+    height: auto;
+    border-radius: 2vw;
+    z-index: 1;
+}
+.videoFondo2{
+    position: absolute;
+    top: 9vw;
+    width: 40vw;
+    left: 31vw;
+    height: auto;
+    border-radius: 2vw;
+    opacity: 0.2;
+}
+.Sp{
+    color: white;
+    position: absolute;
+    top: 36.5vw;
+    width: 50vw;
+    left: 38vw;
+    font-size: 1vw;
+    font-family: D;
+}
+.spx{
+    position: absolute;
+    color: white;
+    top: 39vw;
+    width: 40vw;
+    left: 32vw;
+    font-size: 1vw;
+    font-family: T;
+    text-align: center;
+}
+.Tu{
+    position: absolute;
+    color: white;
+    top: 25vh;
+    width: 40vw;
+    left: 78vw;
+    font-size: 1.2vw;
+    font-family: T;
+    font-weight: bolder;
+}
+.Cp{
+    position: absolute;
+    color: white;
+    top: 25vh;
+    width: 40vw;
+    left: 8vw;
+    font-size: 1.2vw;
+    font-family: T;
+    font-weight: bolder;
+}
+.Cph{
+    position: absolute;
+    color: white;
+    top: 35vh;
+    width: 40vw;
+    left: 6vw;
+    font-size: 1vw;
+    font-family: S;
+}
+.Cph span{
+    color:#ff5e0098;
+}
+.img1{
+    position: absolute;
+    top: 38vh;
+    left: 77vw;
+}
+
+.img2{
+    position: absolute;
+    top: 46vh;
+    left: 77vw;
+}
+.img3{
+    position: absolute;
+    top: 53.5vh;
+    left: 77vw;
+}
+.img4{
+    position: absolute;
+    top: 38vw;
+    left: 6vw;
+    border-radius: 6vw;
+}
+.img4 img{
+    width: 3.5vw;
+}
+.img5{
+    position: absolute;
+    top: 38vw;
+    left: 10vw;
+    border-radius: 6vw;
+}
+.img5 img{
+    width: 3.4vw;
+}
+
+.img4 img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.863);
+    border-radius: 4vw;
+}
+.img5 img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.863);
+    border-radius: 4vw;
+}
+
+.rockets {
+    width: 12%;
+    display: flex;
+    gap: 2vw;
+    margin-left: 82vw;
+    margin-top: 40vw;
+    text-align: center;
+    z-index: 2;
+}
+.rockets a{
+    text-decoration: none;
+    color: white;
+    font-family: D;
+    font-size: 1vw;
+    width: 40%;
+    border-radius: 1vw;
+    z-index: 2;
+}
+
+.rockets a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.863);
+}
+.rocket-section {
+    display: none; 
+}
+
+.rocket-section.active {
+    display: block; 
+}
+
+.Sp1{
+    font-size: 4vw;
+    font-weight: bold;
+    color:#ff5e00;
+    opacity: 0.2;
+    font-family: D;
+    top: 33vw;
+    left: 40vw;
+    position: absolute;
+}
+.Tu1{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color:#ff5e00;
+    opacity: 0.2;
+    font-family: D;
+    top: 12.2vw;
+    left: 78vw;
+    position: absolute;
+}
+.Cp1{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color:#ff5e00;
+    opacity: 0.2;
+    font-family: D;
+    top: 12.2vw;
+    left: 6vw;
+    position: absolute;
+}
+
+.text-section h1 {animation: slideInFromLeft 1s ease-out forwards; animation-delay: 0.4s;}
+.Sp { animation: slideInFromRight 1s ease-out forwards; animation-delay: 0.4s; }
+.spx{ animation: slideInFromBottom 1s ease-out forwards; animation-delay: 0.6s; }
+.text-section p { animation: fadeIn 1s ease-out forwards; animation-delay: 0.8s; }
+.ev, .learn-more { animation: bounceIn 1s ease-out forwards; animation-delay: 1s; }

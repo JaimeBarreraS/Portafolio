@@ -84,4 +84,32 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("hashchange", detectarCambioDePagina);
 
     detectarCambioDePagina();
+
+    // ---------------- NUEVO CÓDIGO PARA CAMBIO DE SECCIONES ----------------
+    const links = document.querySelectorAll(".rockets a");
+    const sections = document.querySelectorAll(".rocket-section");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Evita que el enlace cambie la URL
+
+            const targetId = this.getAttribute("data-target"); // Obtiene el ID de la sección a mostrar
+
+            // Oculta todas las secciones
+            sections.forEach(section => section.classList.remove("active"));
+
+            // Muestra solo la sección seleccionada
+            document.getElementById(targetId).classList.add("active");
+
+            // Aplica la animación a la sección activa
+            animarSeccion(targetId);
+        });
+    });
+
+    // Activa la primera sección por defecto
+    const primeraSeccion = document.querySelector(".rocket-section");
+    if (primeraSeccion) {
+        primeraSeccion.classList.add("active");
+        animarSeccion(primeraSeccion.id);
+    }
 });
