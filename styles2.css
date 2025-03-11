@@ -731,7 +731,7 @@ svg {
     font-family: T;
     font-weight: bolder;
 }
-.Cph{
+.Cph, .Cph2{
     position: absolute;
     color: white;
     top: 35vh;
@@ -741,7 +741,7 @@ svg {
     font-family: S;
 }
 .Cph span{
-    color:#ff5e0098;
+    color: #459cff;
 }
 .img1{
     position: absolute;
@@ -756,21 +756,24 @@ svg {
 }
 .img3{
     position: absolute;
-    top: 53.5vh;
-    left: 77vw;
+    top: 54.7vh;
+    left: 77.3vw;
 }
 .img4{
     position: absolute;
-    top: 38vw;
+    top: 39vw;
     left: 6vw;
     border-radius: 6vw;
 }
 .img4 img{
     width: 3.5vw;
 }
+.img3 img{
+    width: 2.3vw;
+}
 .img5{
     position: absolute;
-    top: 38vw;
+    top: 39vw;
     left: 10vw;
     border-radius: 6vw;
 }
@@ -822,8 +825,8 @@ svg {
 .Sp1{
     font-size: 4vw;
     font-weight: bold;
-    color:#ff5e00;
-    opacity: 0.2;
+    color: #459cff;
+    opacity: 0.3;
     font-family: D;
     top: 33vw;
     left: 40vw;
@@ -832,8 +835,8 @@ svg {
 .Tu1{
     font-size: 1.5vw;
     font-weight: bold;
-    color:#ff5e00;
-    opacity: 0.2;
+    color: #459cff;
+    opacity: 0.3;
     font-family: D;
     top: 12.2vw;
     left: 78vw;
@@ -842,8 +845,8 @@ svg {
 .Cp1{
     font-size: 1.5vw;
     font-weight: bold;
-    color:#ff5e00;
-    opacity: 0.2;
+    color: #459cff;
+    opacity: 0.3;
     font-family: D;
     top: 12.2vw;
     left: 6vw;
@@ -852,6 +855,160 @@ svg {
 
 .img4, .img1, .Cph {animation: slideInFromLeft 1s ease-out forwards; animation-delay: 0.4s;}
 .Sp, .img2, .Tu, .Cp, .velocity-range { animation: slideInFromRight 1s ease-out forwards; animation-delay: 0.4s; }
-.spx, .img5, .img3, .videoFondo{ animation: slideInFromBottom 1s ease-out forwards; animation-delay: 0.6s; }
-.text-section p { animation: fadeIn 1s ease-out forwards; animation-delay: 0.8s; }
-.ev, .learn-more { animation: bounceIn 1s ease-out forwards; animation-delay: 1s; }
+.spx, .img5, .img3, .videoFondo, .videoFondo1{ animation: slideInFromBottom 1s ease-out forwards; animation-delay: 0.6s; }
+
+.velocity-range2 {
+    position: absolute;
+    width: 20vw;
+    height: 70vh;
+    left: 81.5vw;
+    top: 33vh;
+    font-family: S;
+    color: white;
+}
+.velocity-range2  h3 {
+    font-size: 0.9vw;
+}
+.velocity-range2  p {
+    font-size: 0.7vw;
+    font-family: D;
+}
+.velocity-range2 #data-velocity2 h3 {
+    margin-top: -2vw;
+}
+
+.velocity-range2 #data-velocity2 p {
+    margin-top: -1vw;
+    margin-left: 8.7vw;
+    color: #459cff;
+}
+
+.velocity-range2 #data-velocity22 h3 {
+    margin-top: -2vw;
+}
+
+.velocity-range2 #data-velocity22 p {
+    margin-top: -1vw;
+    margin-left: 8.7vw;
+    color: #ff6a07;
+}
+
+.velocity-range2 #data-velocity32 h3 {
+    margin-top: -2vw;
+}
+
+.velocity-range2 #data-velocity32 p {
+    margin-top: -1vw;
+    margin-left: 8.7vw;
+    color: #d8d217;
+}
+
+.bar2 {
+    background-color: #30344c;
+    height: 0.4vw;
+    width: 12vw;
+    margin-top: 4vw;
+    border-radius: 8vw;
+    overflow: hidden;
+}
+
+.porcent12 {
+    width: 0;
+    height: 100%;
+    background-color: #459cff;
+    border: #298bfe;
+    animation: fillBar1 2s ease-in-out forwards;
+    border-radius: 2vw;
+}
+
+@keyframes fillBar1 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 29.9%;
+    }
+}
+
+.porcent22 {
+    width: 0;
+    height: 100%;
+    background-color: #ff6a07;
+    border: #298bfe;
+    animation: fillBar22 2s ease-in-out forwards;
+    border-radius: 2vw;
+}
+
+@keyframes fillBar22 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 21.4%;
+    }
+}
+
+.porcent32 {
+    width: 0;
+    height: 100%;
+    background-color: #d8d217;
+    border: #298bfe;
+    animation: fillBar32 2s ease-in-out forwards;
+    border-radius: 2vw;
+}
+
+@keyframes fillBar32 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 48.7%;
+    }
+}
+
+.videoFondo1{
+    position: absolute;
+    top: 15vw;
+    width: 18vw;
+    left: 43vw;
+    height: auto;
+    border-radius: 2vw;
+    z-index: 1;
+}
+
+.Sp12{
+    font-size: 4vw;
+    font-weight: bold;
+    color: #d8d217;
+    opacity: 0.3;
+    font-family: D;
+    top: 33vw;
+    left: 40vw;
+    position: absolute;
+}
+.Tu12{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #d8d217;
+    opacity: 0.3;
+    font-family: D;
+    top: 12.2vw;
+    left: 78vw;
+    position: absolute;
+}
+.Cp12{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #d8d217;
+    opacity: 0.3;
+    font-family: D;
+    top: 12.2vw;
+    left: 6vw;
+    position: absolute;
+}
+.Cph2 span{
+    color: #d8d217;
+}
