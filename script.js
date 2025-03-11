@@ -17,11 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
                                                 #${id} .w2,
                                                 #${id} .w3,
                                                 #${id} .w4,
-                                                #${id} .linea,   
+                                                #${id} .linea, 
+                                                #${id} .Sp,
+                                                #${id} .spx,  
                                                 #${id} .image-section img`);
 
         if (elementos.length === 0) {
-            console.warn(`No se encontraron elementos en la sección: ${id}`);
             return;
         }
                                                             
@@ -48,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
             else if (el.matches(".w3")) animacion = "slideInFromBottom";
             else if (el.matches(".w4")) animacion = "slideInFromBottom";
             else if (el.matches(".linea")) animacion = "slideInFromRightLinea";
+            else if (el.matches(".Sp")) animacion = "slideInFromRight";
+            else if (el.matches(".spx")) animacion = "slideInFromBottom";
             
             el.style.animation = `${animacion} 1s ease-out forwards`;
             el.style.animationDelay = `${0.2 * index}s`;
@@ -66,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function detectarCambioDePagina() {
         let hash = window.location.hash.substring(1);
         if (hash) {
-            console.log(`Cambiando a sección: ${hash}`);
             animarSeccion(hash);
             setTimeout(reiniciarAnimacionCarga, 300);
         }
@@ -85,28 +87,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     detectarCambioDePagina();
 
-    // ---------------- NUEVO CÓDIGO PARA CAMBIO DE SECCIONES ----------------
     const links = document.querySelectorAll(".rockets a");
     const sections = document.querySelectorAll(".rocket-section");
 
     links.forEach(link => {
         link.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita que el enlace cambie la URL
+            event.preventDefault();
 
-            const targetId = this.getAttribute("data-target"); // Obtiene el ID de la sección a mostrar
+            const targetId = this.getAttribute("data-target");
 
-            // Oculta todas las secciones
             sections.forEach(section => section.classList.remove("active"));
 
-            // Muestra solo la sección seleccionada
             document.getElementById(targetId).classList.add("active");
 
-            // Aplica la animación a la sección activa
             animarSeccion(targetId);
         });
     });
 
-    // Activa la primera sección por defecto
     const primeraSeccion = document.querySelector(".rocket-section");
     if (primeraSeccion) {
         primeraSeccion.classList.add("active");
