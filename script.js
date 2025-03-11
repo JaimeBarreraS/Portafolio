@@ -19,7 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
                                                 #${id} .w4,
                                                 #${id} .linea, 
                                                 #${id} .Sp,
-                                                #${id} .spx,  
+                                                #${id} .spx,
+                                                #${id} .img4,
+                                                #${id} .img1,
+                                                #${id} .Cph,
+                                                #${id} .img2,
+                                                #${id} .Tu,
+                                                #${id} .Cp,
+                                                #${id} .velocity-range,
+                                                #${id} .img5,
+                                                #${id} .img3,
+                                                #${id} .videoFondo,
                                                 #${id} .image-section img`);
 
         if (elementos.length === 0) {
@@ -43,14 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
             else if (el.matches(".jaime3")) animacion = "slideInFromLeft";
             else if (el.matches(".b2")) animacion = "slideInFromRight";
             else if (el.matches(".p")) animacion = "FadeIn";
-            else if (el.matches(".a2")) animacion = "slideInFromLeft";
+            else if (el.matches(".a2, .img4, .img1, .Cph ")) animacion = "slideInFromLeft";
             else if (el.matches(".w1")) animacion = "slideInFromBottom";
             else if (el.matches(".w2")) animacion = "slideInFromBottom";
             else if (el.matches(".w3")) animacion = "slideInFromBottom";
             else if (el.matches(".w4")) animacion = "slideInFromBottom";
             else if (el.matches(".linea")) animacion = "slideInFromRightLinea";
-            else if (el.matches(".Sp")) animacion = "slideInFromRight";
-            else if (el.matches(".spx")) animacion = "slideInFromBottom";
+            else if (el.matches(".Sp, .img2, .Tu, .Cp, .velocity-range")) animacion = "slideInFromRight";
+            else if (el.matches(".spx, .img5, .img3, .videoFondo")) animacion = "slideInFromBottom";
             
             el.style.animation = `${animacion} 1s ease-out forwards`;
             el.style.animationDelay = `${0.2 * index}s`;

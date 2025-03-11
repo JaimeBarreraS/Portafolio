@@ -850,8 +850,8 @@ svg {
     position: absolute;
 }
 
-.text-section h1 {animation: slideInFromLeft 1s ease-out forwards; animation-delay: 0.4s;}
-.Sp { animation: slideInFromRight 1s ease-out forwards; animation-delay: 0.4s; }
-.spx{ animation: slideInFromBottom 1s ease-out forwards; animation-delay: 0.6s; }
+.img4, .img1, .Cph {animation: slideInFromLeft 1s ease-out forwards; animation-delay: 0.4s;}
+.Sp, .img2, .Tu, .Cp, .velocity-range { animation: slideInFromRight 1s ease-out forwards; animation-delay: 0.4s; }
+.spx, .img5, .img3, .videoFondo{ animation: slideInFromBottom 1s ease-out forwards; animation-delay: 0.6s; }
 .text-section p { animation: fadeIn 1s ease-out forwards; animation-delay: 0.8s; }
 .ev, .learn-more { animation: bounceIn 1s ease-out forwards; animation-delay: 1s; }
