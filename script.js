@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function reiniciarAnimacionCarga() {
-        let elementos = document.querySelectorAll(".color1, .color3, .color5, .color7");
+        let elementos = document.querySelectorAll(".color1, .color3, .color5, .color7, .porcent1, .porcent2, .porcent3");
 
         elementos.forEach(el => {
             let nuevoElemento = el.cloneNode(true); 
