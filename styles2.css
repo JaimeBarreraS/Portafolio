@@ -19,14 +19,14 @@ html {
 }
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100vw;
     margin: auto;
     overflow: hidden;
 }
 .container{
     position: absolute;
     width: 400vw;
-    height: 100vh;
+    height: 100vw;
     overflow: hidden;
 }
 /* ==========================================*/
@@ -67,7 +67,7 @@ body{
 .gif{
     position: absolute;
     width: 5vw;
-    left: 10vw;
+    left: 10.5vw;
 }
 header {
     display: flex;
@@ -769,7 +769,7 @@ svg {
     width: 3.5vw;
 }
 .img3 img{
-    width: 2.3vw;
+    width: 3vw;
 }
 .img5{
     position: absolute;
@@ -1295,125 +1295,491 @@ svg {
 /* ================ PAGINA 4 ==============*/
 /* ==========================================*/
 
-.jaime24{
-    left: 32vw;
-    top: -7vw;
-    position: absolute;
-    width: 60vw;
-}
-.jaime34{
-    left: 21vw;
-    top: -34vw;
-    position: absolute;
-    width: 95vw;
-    opacity: 0.2;
-}
-
-
-.x,.xx,.xxx,.xxxx{
-    position: absolute;
-    background-color: #2124219b;
-    border-radius: 2vw;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    justify-content: center;
+.flechas {
+    width: 12%;
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    padding: 1vw; 
-    text-align: center; 
+    gap: 2vw;
+    margin-left: 44vw;
+    margin-top: 85vh;
+    text-align: center;
+    z-index: 2;
 }
-
-.x{
-    width: 24vw;
-    left: 7vw;
-    top: 9vw;
-}
-.xx{
-    width: 24vw;
-    left: 68.5vw;
-    top: 9vw;
-}
-.xxx{
-    width: 24vw;
-    left: 7vw;
-    top: 26vw;
-}
-.xxxx{
-    width: 24vw;
-    left: 68.5vw;
-    top: 24vw;
-}
-
-
-.x:hover{
-    transform: scale(1.1);
-    box-shadow: -23px 21px 0px -14px rgba(255,255,255,1);
-    border-radius: 2vw;
-}
-.xx:hover{
-    transform: scale(1.1);
-    box-shadow: -23px 21px 0px -14px rgba(255,255,255,1);
-    border-radius: 2vw;
-}
-.xxx:hover{
-    transform: scale(1.1);
-    box-shadow: -23px 21px 0px -14px rgba(255,255,255,1);
-    border-radius: 2vw;
-}
-.xxxx:hover{
-    transform: scale(1.1);
-    box-shadow: -23px 21px 0px -14px rgba(255,255,255,1);
-    border-radius: 2vw;
-}
-.x1{
-    font-size: 2vw;
-}
-.x2{
-    font-size: 1vw;
-    font-family: D;
-    color: #ca8638;
-}
-.x3{
-    font-size: 1vw;
-    font-family: T;
+.flechas a{
+    text-decoration: none;
     color: white;
+    font-family: D;
+    font-size: 1vw;
+    width: 40%;
+    border-radius: 1vw;
+    z-index: 2;
+    background-color: rgba(131, 131, 131, 0.374);
 }
 
+.flechas a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.863);
+}
+.flecha-section {
+    display: none;
+}
+.flecha-section.active {
+    display: block;
+}
+.Tu15{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #1E90FF;
+    opacity: 0.3;
+    font-family: D;
+    top: 20vh;
+    left: 62.5vw;
+    position: absolute;
+    z-index: 1;
+}
+.Cp15{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #ff6a07;
+    opacity: 0.3;
+    font-family: D;
+    top: 20vh;
+    left: 15.5vw;
+    position: absolute;
+    z-index: 1;
+}
+
+/*===========================================*/
+
+.uno{
+    position: absolute;
+    font-size: 4vw;
+    top: 27vh;
+    left:23vw ;
+    z-index: 1;
+}
+.dos{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:13vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+}
+.tres{
+    position: absolute;
+    font-size: 2vw;
+    top: 47vh;
+    left:15vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+}
+.clase{
+    display: flex;
+    position: absolute;
+    top: 60vh;
+    left:13vw ;
+    gap: 3vw;
+    z-index: 1;
+}
+
+.clase img{
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    width: 7vw;
+}
+
+.cc img{
+    margin-top: 0.2vw;
+    width: 6.5vw;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+.clase img:hover{
+    transform: scale(1.3);
+}
+
+/*-------------------------------------*/
+.uno1{
+    position: absolute;
+    font-size: 4vw;
+    top: 27vh;
+    left:74vw ;
+    z-index: 1;
+}
+.dos1{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:62.5vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+}
+.tres1{
+    position: absolute;
+    font-size: 1.9vw;
+    top: 47vh;
+    left:59.5vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+}
+.clase1{
+    display: flex;
+    position: absolute;
+    top: 60vh;
+    left:64vw ;
+    gap: 3vw;
+    z-index: 1;
+}
+
+.clase1 img{
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    width: 7vw;
+}
+
+.clase1 img:hover{
+    transform: scale(1.3);
+}
+/*===========================================*/
+.dos2{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:19.5vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+}
+.tres2{
+    position: absolute;
+    font-size: 2vw;
+    top: 47vh;
+    left:12.7vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+}
+/*-------------------------------------*/
+
+.dos12{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:60vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+}
+.tres12{
+    position: absolute;
+    font-size: 1.9vw;
+    top: 47vh;
+    left:59vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+}
+/*===========================================*/
+.dos3{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:14.5vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+}
+.tres3{
+    position: absolute;
+    font-size: 2vw;
+    top: 47vh;
+    left:16.5vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+}
+.clase3{
+    display: flex;
+    position: absolute;
+    top: 60vh;
+    left:18vw ;
+    gap: 3vw;
+    z-index: 1;
+}
+
+.clase3 img{
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    width: 7vw;
+}
+
+.clase3 img:hover{
+    transform: scale(1.3);
+}
+
+/*-------------------------------------*/
+
+.dos13{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:59vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+}
+.tres13{
+    position: absolute;
+    font-size: 2vw;
+    top: 47vh;
+    left:62.5vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+    text-align: center;
+}
+.clase13{
+    display: flex;
+    position: absolute;
+    top: 60vh;
+    left:68vw ;
+    gap: 3vw;
+    z-index: 1;
+}
+
+.clase13 img{
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    width: 7vw;
+}
+
+.clase13 img:hover{
+    transform: scale(1.3);
+}
+/*===========================================*/
+.dos4{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:16.6vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+}
+.tres4{
+    position: absolute;
+    font-size: 2vw;
+    top: 47vh;
+    left:14vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+    text-align: center;
+}
+.clase4{
+    display: flex;
+    position: absolute;
+    top: 60vh;
+    left:17vw ;
+    gap: 3vw;
+    z-index: 1;
+}
+
+.clase4 img{
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    width: 7vw;
+}
+
+.clase4 img:hover{
+    transform: scale(1.3);
+}
+
+/*-------------------------------------*/
+
+.dos14{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:60vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+    text-align: center;
+}
+.tres14{
+    position: absolute;
+    font-size: 2vw;
+    top: 53vh;
+    left:60vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+    text-align: center;
+}
+.clase14{
+    display: flex;
+    position: absolute;
+    top: 65vh;
+    left:68vw ;
+    gap: 3vw;
+    z-index: 1;
+}
+
+.clase14 img{
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    width: 7vw;
+}
+
+.clase14 img:hover{
+    transform: scale(1.3);
+}
+/*===========================================*/
+.dos5{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:8vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+}
+.tres5{
+    position: absolute;
+    font-size: 2vw;
+    top: 47vh;
+    left:21vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+    text-align: center;
+}
+.clase5{
+    display: flex;
+    position: absolute;
+    top: 60vh;
+    left:17vw ;
+    gap: 3vw;
+    z-index: 1;
+}
+
+.clase5 img{
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    width: 7vw;
+}
+
+.clase5 img:hover{
+    transform: scale(1.3);
+}
+
+/*-------------------------------------*/
+
+.dos15{
+    position: absolute;
+    font-size: 1.7vw;
+    top: 40vh;
+    left:54vw ;
+    color: white;
+    z-index: 1;
+    font-family: D;
+    text-align: center;
+}
+.tres15{
+    position: absolute;
+    font-size: 2vw;
+    top: 53vh;
+    left:62vw ;
+    color: white;
+    z-index: 1;
+    font-family: S;
+    text-align: center;
+}
+.clase15{
+    display: flex;
+    position: absolute;
+    top: 65vh;
+    left:68vw ;
+    gap: 3vw;
+    z-index: 1;
+}
+
+.clase15 img{
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    width: 7vw;
+}
+
+.clase15 img:hover{
+    transform: scale(1.3);
+}
+
+/*-------------------------------------*/
 .icons {
     display: flex;
     justify-content: center;
     gap: 1.5vw;
     position: absolute;
-    top: 44vw;
-    left: 2vw;
+    top: 94.5vh;
+    left: 4vw;
     transform: translateX(-50%);
 }
 
 .icons a img {
-    width: 3.5vw;
-    border-radius: 6vw;
+    width: 2vw;
     transition: transform 0.3s ease, border-radius 0.3s ease;
 }
 
 .icons a img:hover {
     transform: scale(1.3);
-    border-radius: 4vw;
 }
 
 .footer{
     position: absolute;
-    top: 45vw;
-    left: 22vw;
+    top: 94.5vh;
+    left: 20vw;
     font-size: 0.8vw;
     color: #B0B0B0;
     font-family: Verdana;
 }
 .ft{
     position: absolute;
-    top: 45vw;
-    left: 21vw;
+    top: 94.5vh;
+    left: 18vw;
     background-color: white;
     width: 0.1vw;
     height: 2vw;
+}
+.Cp15,.o1,.uno1,.dos1,.tres12,.dos12,.tres1,.clase1, .dos14, .tres14, .clase14, .dos15, .tres15, .clase15,.dos3,.tres3,.clase3{animation: slideInFromLeft 1s ease-out forwards; animation-delay: 0.4s;}
+.Tu15,.o2,.uno,.dos,.dos2,.tres2,.tres,.clase,
+.dos4, .tres4, .clase4, .dos5, .tres5, .clase5,.dos13,.tres13,.clase13{ animation: slideInFromRight 1s ease-out forwards; animation-delay: 0.4s; }
+.flechas, .ft{ animation: slideInFromBottom 1s ease-out forwards; animation-delay: 0.6s; }
+
+.Cp15, .o1, .Tu15, .o2, 
+.uno, .dos, .tres, .clase, .uno1, .dos1, .tres1, .clase1,
+.flechas, .icons, .footer, .ft,
+.dos2,.dos12,.tres2,.tres12,
+.dos3, .tres3, .clase3, .dos13, .tres13, .clase13,
+.dos4, .tres4, .clase4, .dos14, .tres14, .clase14,
+.dos5, .tres5, .clase5, .dos15, .tres15, .clase15 {
+    animation-delay: 0.2s !important; 
+}
+.fondo-rotante {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 15vw;
+    height: 15vw;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+    border: 2px solid rgba(255, 165, 0, 0.8);
+}
+.gif1{
+    position: absolute;
+    width: 20vw;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform 0.5s ease-in-out;
 }
