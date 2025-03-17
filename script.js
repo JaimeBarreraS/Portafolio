@@ -212,5 +212,10 @@ document.addEventListener("DOMContentLoaded", function () {
     flechaPrev.addEventListener("click", rotarImagen);
     flechaNext.addEventListener("click", rotarImagen);
 
+    document.querySelectorAll(".menu-link").forEach(link => {
+        link.addEventListener("click", () => {
+            document.getElementById("menuHambur").checked = false;
+        });
+    });
 
 });
