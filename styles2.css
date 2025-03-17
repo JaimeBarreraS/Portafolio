@@ -2360,5 +2360,112 @@ svg {
     .img5 img{
         width: 10vw;
     }
+    /*44444444444444444444444444444444444444444444*/
+    
+    .gif1{
+        width: 50vw;
+        left: 50vw;
+        top: 50%;
+        opacity: 0.5;
+    }
+    .flechas {
+        width: 40%;
+        display: flex;
+        gap: 4vw;
+        margin-left: 34vw;
+        margin-top: 160%;
+        text-align: center;
+        z-index: 2;
+    }
+    .flechas a{
+        text-decoration: none;
+        color: white;
+        font-family: D;
+        font-size: 5vw;
+        width: 40%;
+        border-radius: 5vw;
+        z-index: 2;
+        background-color: rgba(131, 131, 131, 0.374);
+    }
+    .Tu15{
+        font-size: 3vw;
+        opacity: 0.3;
+        top: 15%;
+        left: 57vw;
+        text-align: center;
+    }
+    .Cp15{
+        font-size: 3vw;
+        opacity: 0.3;
+        top: 16%;
+        left: 6vw;
+        text-align: center;
+    }
+    .uno{
+        position: absolute;
+        font-size: 15vw;
+        top: 22%;
+        left:18vw ;
+        z-index: 1;
+    }
+    .uno1{
+        position: absolute;
+        font-size: 15vw;
+        top: 22%;
+        left:69vw ;
+        z-index: 1;
+    }
+
+    .dos,.dos2,.dos3,.dos4,.dos5{
+        font-size: 3.5vw;
+        top: 35%;
+        left:6vw ;
+        text-align: center;
+        width: 45vw;
+    }
+    .dos1,.dos12,.dos13,.dos14,.dos15{
+        font-size: 3.5vw;
+        top: 35%;
+        left:53vw ;
+        text-align: center;
+        width: 45vw;
+    }
+    .tres,.tres2,.tres3,.tres4,.tres5{
+        position: absolute;
+        font-size: 3.5vw;
+        top: 45%;
+        left:6vw ;
+        color: white;
+        z-index: 1;
+        font-family: S;
+        width: 45vw;
+        text-align: center;
+    }
+    .tres1,.tres12,.tres13,.tres14,.tres15{
+        position: absolute;
+        font-size: 3.5vw;
+        top: 45%;
+        left:52vw ;
+        color: white;
+        z-index: 1;
+        font-family: S;
+        text-align: center;
+    }
+    .clase,.clase3,.clase4,.clase5{
+        top: 55%;
+        left:22vw ;
+        gap: 2vw;
+        flex-direction: column;
+    }
+    .clase1,.clase13,.clase14,.clase15{
+        top: 55%;
+        left:72vw ;
+        gap: 2vw;
+        flex-direction: column;
+    }
+    .clase img,.clase1 img,.clase3 img,.clase4 img,.clase5 img,.clase13 img,.clase14 img,.clase15 img{
+        transition: transform 0.3s ease, border-radius 0.3s ease;
+        width: 14vw;
+    }
 }
 
