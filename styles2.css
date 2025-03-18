@@ -67,7 +67,7 @@ body{
 .gif{
     position: absolute;
     width: 5vw;
-    left: 10.5vw;
+    left: 11vw;
 }
 .gif2{
     display: none;
@@ -2466,6 +2466,15 @@ svg {
     .clase img,.clase1 img,.clase3 img,.clase4 img,.clase5 img,.clase13 img,.clase14 img,.clase15 img{
         transition: transform 0.3s ease, border-radius 0.3s ease;
         width: 14vw;
+    }
+    .footer{
+        display: none;
+    }
+    .ft{
+        display: none;
+    }
+    .icons{
+        display: none;
     }
 }
 
